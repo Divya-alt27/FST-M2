@@ -1,0 +1,118 @@
+Variables
+${path}
+/v2/${pet}
+
+
+values in user-defined variables
+
+
+.\jmeter -n -t C:\Users\003SUA744\Desktop\FST-2\jmeter\Activity1.jmx -l C:\Users\003SUA744\Desktop\FST-2\jmeter\results.jtl -e -o C:\Users\003SUA744\Desktop\FST-2\jmeter\reports
+
+
+https://jmeter.apache.org/usermanual/get-started.html#non_gui
+
+
+Access token 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
+
+ssh key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCQiOXdtHogsMhwWxUfRjDDlp8+SsJzIhBNIR1HYo5/WISOjn3c05yW1ARHihj1CImb6AMsUpCbwCJSbM8BraQrRmUdageurctJCB4WNzNHNOm/SFcRe8HUedbhWRe4OoWdqmmVr8vytOzPIC0YMxt3Krbe+hoi7UoKbNJ1i0ei8dM/8hhwpIHA9dgBlx4Ikj7CfIwLFto/N+vgi7fwNqNEYE04kSaOajSJCQyTzqb6PNsgjxTxCJ5pjTV/cwESnYcxOzxdrV2Dn9i82mm1ZiVD+J9aXLKfvqvhHnl+6CnqdxI3UyXzwjcXbw1/ZuUWni3aMH4QVuCdvyAvF47f7MKN 
+
+Openshift links
+
+https://developers.redhat.com/learn/openshift/foundations-openshift
+https://people.redhat.com/tmichett/do180/openshift_cheat_sheet_r5v1.pdf
+
+sample docker image for openshift
+quay.io/openshiftroadshow/parksmap:1.3.0
+
+oc new-app quay.io/rhdevelopers/greeter
+oc expose service/greeter
+oc status
+oc delete all -l labels
+oc scale
+
+oc get project
+
+oc create -f https://raw.githubusercontent.com/openshift-labs/starter-guides/ocp-4.8/mongodb-template.yaml -n sedric-divya-dev
+
+oc new-app --template=mongodb-ephemeral --param MONGODB_USER=genuser --param MONGODB_PASSWORD=password --param MONGODB_DATABASE=namegen --param NAMESPACE={your-namespace}
+
+oc import-image mongodb:3.6 --from=registry.access.redhat.com/rhscl/mongodb-36-rhel7 --confirm -n {your-namespace}
+
+
+oc new-app https://github.com/redhat-developer-demos/namegen --name=namegen-app --env=MONGODB_URL=mongodb://genuser:password@mongodb/namegen
+
+oc delete all -l app=namegen-app
+oc delete all -l app=mongodb-ephemeral
+
+
+https://download.jetbrains.com/idea/ideaIC-2023.3.exe
+
+https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#a-build-lifecycle-is-made-up-of-phases
+https://mvnrepository.com/
+
+mvn validate
+mvn compile  - compile the main(source) code
+mvn test     - compile and execute all test
+mvn package  - generate JAR for the project
+mvn verify   - Integration test
+
+Last things to happen
+
+mvn install  - Install the jar file as dependeny
+mvn deploy   - deploy the jar to a repository
+
+
+jar file will go to .m2 folder
+
+ppt link
+https://lms.training-support.net/alchemy/topic/ibm-fst-m2-new-nov23-02-session-20/
+
+
+Ansible commands
+ansible-galaxy init roleName
+
+
+https://www.ibm.com/blog/olap-vs-oltp/
+
+
+
+
+1. Open Docker Desktop
+2. Open Powershell
+3. Run command:
+docker container run -it -p 9870:9870 -p 8088:8088 registry.gitlab.com/training-support/training-environments:hadoop-v1 bash
+
+https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html
+
+
+
+docker exec -it containername bash
+$HADOOP_HOME/sbin/mr-jobhistory-daemon.sh start historyserver
+
+
+Informatica
+https://www.informatica.com/trials/cloud-data-integration.html
+
+
+https://docs.informatica.com/cloud-common-services/administrator/current-version/rest-api-reference/mass-ingestion-files-rest-api/job-resource.html#GUID-F4FAB78D-943D-483D-8912-C813E57F7F05
+
+https://www.kaggle.com/
+
+
+Username: fstm4db
+Password: tB2nvfnuZJe9AGe
+Host: db4free.net
+Port: 3306
+Database Name: fstm4db
+
+
+$HADOOP_HOME/sbin/mr-jobhistory-daemon.sh start historyserver
+
+pyspark link
+https://spark.apache.org/docs/latest/api/python/index.html
+
+Query Surge link
+SELECT SOURCE_ID,EMAIL,FIRST,LAST,PHONE 
+FROM dw.customer_dim;
+
+
